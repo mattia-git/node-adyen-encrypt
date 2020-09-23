@@ -5,10 +5,6 @@ function adyenEncrypt(version) {
         return require("./lib/0_1_" + version);
     }
 
-    if (version && version == "securefields") {
-        return require("./lib_securefields")
-    }
-
     return require("./lib/0_1_24");
 }
 
